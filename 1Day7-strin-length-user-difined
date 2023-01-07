@@ -1,0 +1,18 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+  int c=0;
+  string str;
+  cin>>str;
+int i=0;
+while(str[i] != '\0'){
+  c++;
+  i++;
+}
+
+  cout<< c << endl;
+
+  return 0;
+}
