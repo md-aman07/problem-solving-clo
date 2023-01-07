@@ -1,0 +1,26 @@
+ #include <stdio.h>
+
+int main(void) {
+  int i,j; char ch='A';
+  
+  for (i=1; i<=3; i++){
+        
+    for (j=1; j<=i; j++){
+      printf("%c",ch);
+    }
+    ch++;
+   printf("\n");   
+
+  // printf("this progrma is solve by two method");
+ /* int i,j; 
+  for (i=1; i<=3; i++){
+    for (j=1; j<=i; j++)
+      {
+        printf("%c",(char)(i+64));
+      } printf("\n"); 
+  }*/
+    
+  
+    }
+  return 0;
+}
