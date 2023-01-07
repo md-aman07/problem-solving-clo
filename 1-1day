@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main(void) {
+  int basic,allow=0,hra,pf,da,totalsalary;
+  char grade;
+  printf("enter the basic");
+  scanf("%d",&basic);
+  printf("enter the grade");
+  scanf("%ch",&grade);
+  
+  if(grade == 'A')
+  { allow=1700;
+    }
+  
+   else if (grade == 'B')
+   {allow=1500;
+     }
+  else{
+    allow=1300;
+  }
+  hra=0.20*basic;
+  da=0.50*basic;
+  pf=0.11*basic;
+  totalsalary=basic+allow+hra+da-pf;
+  printf("total salary=%d",totalsalary);
+    
+  return 0;
+}
