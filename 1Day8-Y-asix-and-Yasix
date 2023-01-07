@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void) {
+  int x,y;
+printf("enter the value x and y");
+  scanf("%d %d",&x,&y);
+  if (x>0 && y>0){
+    printf("first quardinate %d and poinf %d",x,y);
+  }
+  else if (x<0 && y>0){
+    printf("seconf quardinate  %d and piont %d",x,y);
+  }
+  else if (x<0 && y<0){
+    printf("thirld quardinate %d and point %d",x,y);
+  }
+  else if (x>0 && y<0){
+    printf("fourth quardinate %d and point %d",x,y);
+  }
+    else
+      {
+      printf("wrong alphabate fil ");
+      }
+    
+  
+  return 0;
+}
