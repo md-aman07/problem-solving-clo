@@ -1,0 +1,24 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+float sum(int n){
+  int m=1;
+  int fact =1;
+  float sum=0,i;
+  for(int i=1; i<=n; i++){
+   m = m*(-1);
+    fact = fact*i;
+    sum = sum + m*(pow(2,i)/fact);
+    
+  }
+  return sum+1;
+}
+
+int main(){
+  int n;
+  cin>>n;
+  cout<<sum(n)<<endl;
+
+ return 0; 
+}
