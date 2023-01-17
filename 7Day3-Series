@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int sum(int n){
+  int sum = 0,m = 1,fact = 1;
+  for (int i=2; i<=3; i++){
+    fact = fact*i;
+    int so = fact*(i+1);
+    m =  m * (-1);
+    sum = sum + (m*(i/so));
+    cout<<"fact"<<fact<<endl;
+    cout<<"so"<<so<<endl;
+  }  
+  return sum;
+}
+
+int main(){
+  int n;
+  cout<<sum(n)<<endl;
+
+ return 0; 
+}
