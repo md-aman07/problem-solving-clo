@@ -1,0 +1,25 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+float sum(int n){
+  int fact =1;
+  float sum=0,i;
+  for(int i=1; i<=n; i++){
+    fact=fact*i;
+    sum = sum + pow(2,i)/fact;
+
+    //this method through i could reach the answer
+    // cout<<"jast check  :"<<fact<<endl;
+    // cout<<"sum of   :"<<sum<<endl;
+  }
+  return sum+1;
+}
+
+int main(){
+  int n;
+  cin>>n;
+  cout<<sum(n)<<endl;
+
+ return 0; 
+}
