@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int j;
+void vice(string s1 , string s2){
+  
+if(s1.length()==s2.length()){
+   j=0;
+  for (int i=0; i<s1.length(); i++){
+     if(s1[i] == s2[i]){
+       j++;
+     }
+    else{
+      cout<<"string is not same"<<endl;
+    }
+  }
+}
+  else{
+    cout<<"string is not same"<<endl;
+  
+  }
+   cout<<"value of length"<<s1.length()<<endl;
+cout<<"vallue of ivv:"<<j<<endl;
+  if (s1.length() == j){
+    cout<<"string same"<<endl;
+  }
+  else{
+    cout<<"not"<<endl;
+  }
+}
+
+int main(){
+  string s1 = "usama";
+  string s2 = "usama";
+
+  vice(s1,s2);
+
+ return 0; 
+}
