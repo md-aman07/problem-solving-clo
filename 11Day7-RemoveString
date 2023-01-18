@@ -1,0 +1,47 @@
+// GeeksforGeeks
+// C program to trim leading whitespaces
+
+#include <stdio.h>
+
+void removeLeading(char *str, char *str1)
+{
+	int idx = 0, j, k = 0;
+
+	// Iterate String until last
+	// leading space character
+	while (str[idx] == ' ' || str[idx] == '\t' || str[idx] == '\n')
+	{
+		idx++;
+	}
+
+	// Run a for loop from index until the original
+	// string ends and copy the content of str to str1
+	for (j = idx; str[j] != '\0'; j++)
+	{
+		str1[k] = str[j];
+		k++;
+	}
+
+	// Insert a string terminating character 
+	// at the end of new string
+	str1[k] = '\0';
+
+	// Print the string with no whitespaces
+	printf("%s", str1);
+}
+
+// Driver Code
+int main()
+{
+	// Given string
+	char str[] = "		 geeksforgeeks";
+
+	char str1[100];
+
+	// Function call
+	removeLeading(str, str1);
+
+	return 0;
+}
+
+// Code contributed by vpsop
