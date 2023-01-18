@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void vice(string s,string sa){
+  int i;
+  for(int i=0; i<s.length(); i++){
+    s[i] =s[i]-32;
+  
+    cout<<s[i]<<"  :this is the logic"<<endl;
+    }
+  cout<<endl;
+
+  for(int i=0; i<sa.length(); i++){
+    sa[i] = sa[i]+32;
+    cout<<s[i]<<" : this is the next"<<endl;
+    
+  }
+}
+
+int main(){
+  string s = "mohd";
+  string sa = "AMAN";
+
+  vice(s,sa);
+    
+ return 0; 
+}
